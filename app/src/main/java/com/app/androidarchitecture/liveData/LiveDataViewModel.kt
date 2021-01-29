@@ -6,11 +6,13 @@ import androidx.lifecycle.ViewModel
 
 class LiveDataViewModel:ViewModel() {
 
-    private var counts = MutableLiveData<Int>()
+    private var countMutable = MutableLiveData<Int>()
     val count:LiveData<Int>
-    get() = counts
+    get() = countMutable
 
-
+    fun setValue(value:Int){
+        countMutable.value = countMutable.value?.plus(value)
+    }
 
 
 

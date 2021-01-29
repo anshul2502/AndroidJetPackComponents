@@ -2,9 +2,14 @@ package com.app.androidarchitecture.viewmodel
 
 import androidx.lifecycle.ViewModel
 
-class ActivityViewModel:ViewModel() {
+class ActivityViewModel(intCount:Int):ViewModel() {
 
     private var count:Int = 0
+
+
+    init {
+        count = intCount
+    }
 
 
     fun getCount():Int{
