@@ -3,4 +3,6 @@
     <string name="entered_number">Entered Number</string>
     <string name="add_number">Add Number</string>
     <string name="enter_number">Enter Number</string>
+    <string name="click_here">Click Here</string>
+    <string name="download_user_data">Download User Data</string>
 </resources>
